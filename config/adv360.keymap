@@ -28,11 +28,11 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &lt 4 EQUAL &kp N1    &kp N2   &mt CAPS N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &mt CAPS N8    &kp N9   &kp N0   &kp MINUS
+        &lt 4 EQUAL &kp N1    &kp N2   &lt 6 CAPS N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &lt 6 CAPS N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &hm LSHFT ESC &kp TAB   &kp END  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &mo 2
+        &mo 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &hm LSHFT ESC &lt 7 TAB   &kp END  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &mo 2
       >;
     };
     keypad {
@@ -88,12 +88,12 @@
     };
 
     extra3 { 
-      display-name = "Cyan";    
+      display-name = "xcode";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
-        &none &none &none &none &none &none  &none                                           &none &none &none &none  &none  &none  &none
-        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
-        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+        &none &none &none &none &kp LG(R) &kp LG(LC(T))  &none                                           &none &none &none &none  &none  &kp LG(LA(O))  &none
+        &none &none &none &none &kp LG(LA(F)) &none  &none        &none &none &none &none        &none &none &kp LC(6) &kp LG(LS(O)) &none  &none  &none
+        &none &none &none &kp LG(LC(B)) &none &kp LG(B)                      &none &none                     &kp LC(GRAVE) &kp LG(LC(LS(ENTER))) &none &none  &none  &none
         &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
       >;
     };
@@ -104,8 +104,8 @@
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
         &none &none &none &none &none &none  &none                                           &none &none &none &kp UP  &none  &none  &none
         &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &none  &none        &none &none &none &none        &none &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
-        &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &none  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &none &none &none &none &none              &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &none &none &none &none &none              &none &none &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
       >;
     };
   };
