@@ -57,7 +57,7 @@
       >;
     };
 
-    extra4 { 
+    keypad { 
       display-name = "nav";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
@@ -124,7 +124,7 @@
       >;
     };
 
-    keypad {
+    extra4 {
       display-name = "Kp";
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
