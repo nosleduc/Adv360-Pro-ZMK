@@ -32,7 +32,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp LALT &hm LCTRL LEFT &hm LGUI RIGHT                &mt LSHFT ESC &kp DEL   &kp END  &kp PG_DN &kp ENTER &mt RSHFT SPACE              &hm LGUI DOWN &mt RCTRL UP  &kp LBKT &kp RBKT &mo 2
+        &mo 2     &kp GRAVE &kp LALT &hm LCTRL LEFT &hm LGUI RIGHT                &hm LSHFT ESC &kp DEL   &kp END  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm LGUI DOWN &mt RCTRL UP  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
@@ -67,7 +67,13 @@
     };
     extra1 { 
       display-name = "Red";    
-      status = "reserved";
+      bindings = <
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &none &none &none &none &none &none  &none                                           &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+        &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+      >;
     };
 
     extra2 { 
