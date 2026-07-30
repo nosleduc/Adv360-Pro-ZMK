@@ -50,7 +50,7 @@
       display-name = "Base";
       bindings = <
         &lt 4 EQUAL &kp N1    &kp N2   &lt 3 N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &lt 6 N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &sk LCTRL                                                            &sk RCTRL &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &lt 5 ESC &MoTo 7 7   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &mo 2
@@ -123,10 +123,10 @@
       display-name = "nav";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
-        &none &none &none &none &none &none  &none                                           &none &none &none &kp UP  &none  &none  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &none  &none        &none &none &none &none        &none &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
+        &none &none &none &none &none &none  &sk LCTRL                                           &sk RCTRL &none &none &kp UP  &none  &none  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &none  &kp LGUI        &kp LG(C) &kp LG(V) &kp DEL &kp BSPC        &kp RGUI &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
         &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &to 0 &none &none &none &none              &none &none &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &to 0 &none &none &none &kp RSHFT              &kp RSHFT &kp RGUI &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
       >;
     };
   };
