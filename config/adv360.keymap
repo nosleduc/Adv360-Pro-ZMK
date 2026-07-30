@@ -49,37 +49,33 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &lt 4 EQUAL &kp N1  &kp N2  &lt 3 N3  &kp N4  &kp N5 &tog 7                                                                     &mo 3     &kp N6  &kp N7  &lt 6 N8  &kp N9    &kp N0      &kp MINUS
-        &kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T  &sk LCTRL                                                                  &sk RCTRL &kp Y   &kp U   &kp I     &kp O     &kp P       &kp BSLH
-        &kp ESC     &kp A   &kp S   &kp D     &kp F   &kp G  &kp LGUI               &kp LG(C) &kp LG(V) &kp DEL   &kp BSPC              &kp RGUI  &kp H   &kp J   &kp K     &kp L     &kp SEMI    &kp SQT
-        &kp LSHFT   &kp Z   &kp X   &kp C     &kp V   &kp B                                   &kp HOME  &kp PG_UP                                 &kp N   &kp M   &kp COMMA &kp DOT   &kp FSLH    &kp RSHFT
-        &none   &hm LALT GRAVE  &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT   &lt 5 ESC &MoTo 1 1 &kp TAB   &kp PG_DN &kp ENTER &hm RSHFT SPACE       &hm RSHFT DOWN  &hm RGUI UP     &hm RCTRL LBKT  &hm LALT RBKT &none
+        &lt 4 EQUAL &kp N1    &kp N2   &lt 3 N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &lt 6 N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &sk LCTRL                                                            &sk RCTRL &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &lt 5 ESC &MoTo 7 7   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &mo 2
       >;
     };
-
-    keypad { 
-      display-name = "nav";    
+    keypad {
+      display-name = "Kp";
       bindings = <
-        &none &none &none &none &none &none  &none                                                        &none &none &none &none &none &none &none 
-        &none &none &none &none &none &none  &trans                                                       &trans &none &none &kp UP  &none  &none  &none
-        &none &one  &none &none &none &none  &trans        &trans &trans &tans &trans                     &trans &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT  &kp LG(RIGHT)  &none
-        &none &none &none &none &none &none                      &none &none                                    &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &to 0 &none &none &trans &kp RSHFT              &kp RSHFT &kp RGUI &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
+        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
       >;
     };
-
-    
     fn {
       display-name = "Fn";
       bindings = <
-        &none &none &none &none &none &none  &none                                            &none &none &none &none &none  &none &none 
-        &none &none &none &none &none &none  &none                                            &none &kp LS(F10)&kp F9 &kp F10 &kp F11 &kp F12  &none
-        &none &none &none &none &none &none  &none        &none &none &none &none             &none &kp F8 &kp F5 &kp F6 &kp F7  &kp F8  &none
-        &none &none &none &none &none &none                      &none &none                        &none &kp F1 &kp F2 &kp F3  &kp F4  &none
-        &to 0 &trans &trans &trans &trans               &none &none &none &none &none &none             &none &none &none &none  &none
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                          &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+        &none &none &none &none &none &none  &none                                                &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none                 &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                            &none &none &none &none  &none  &none
+        &none &none &none &none &none               &none &none &none &none &none &none                       &none &none &none  &none  &none
       >;
     };
-    
     mod {
       display-name = "Mod";
       bindings = <
@@ -90,7 +86,6 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
-    
     extra1 { 
       display-name = "Media";    
       bindings = <
@@ -124,16 +119,15 @@
       >;
     };
 
-    extra4 {
-      display-name = "Kp";
+    extra4 { 
+      display-name = "nav";    
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 7                                                           &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+        &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
+        &none &none &none &none &none &none  &sk LCTRL                                           &sk RCTRL &none &none &kp UP  &none  &none  &none
+        &none &none &none &none &none &none  &kp LGUI        &kp LG(C) &kp LG(V) &kp DEL &kp BSPC        &kp RGUI &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &to 0 &none &none &kp ENTER &kp RSHFT              &kp RSHFT &kp RGUI &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
       >;
     };
-
   };
 };
