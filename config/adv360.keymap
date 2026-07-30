@@ -29,7 +29,7 @@
       };
     };
 
-   {
+   
     macros {
 
         MyEnter: MyEnter {
