@@ -46,14 +46,14 @@
   keymap {
     compatible = "zmk,keymap";
 
-    default_layer {
-      display-name = "Base";
+    base {
+      display-name = "base";
       bindings = <
-        &lt 4 EQUAL &kp N1    &kp N2   &lt 6 N3   &kp N4     &kp N5 &tog 7                                                           &mo 3 &kp N6 &kp N7 &lt 6 N8    &kp N9   &kp N0   &kp MINUS
+        &lt 4 EQUAL &kp N1    &kp N2   &lt 6 N3   &kp N4     &kp N5 &none                                                           &mo 3 &kp N6 &kp N7 &lt 6 N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &sk LCTRL                                                            &sk RCTRL &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &MoTo 2 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &lt 5 ESC &MoTo 1 1   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &mo 2
+        &MoTo 2 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &lt 5 ESC &MoTo 1 1   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &none
       >;
     };
 
@@ -70,17 +70,18 @@
 
 
     fn {
-      display-name = "Fn";
+      display-name = "fn";
       bindings = <
-        &none &none &none &none &none &none  &tog 1                                          &mo 3 &none &none &none &none &none &none 
+        &none &none &none &none &none &none  &none                                          &none &none &none &none &none &none &none 
         &none &none &none &none &none &none  &none                                                &none &kp LS(F10) &kp F9 &kp F10 &kp F11  &kp F12  &none
         &none &none &none &none &none &none  &none        &none &none &none &none                 &none &kp F8 &kp F5 &kp F6 &kp F7  &kp F8  &none
         &none &none &none &none &none &none                      &none &none                            &none &kp F1 &kp F2 &kp F3  &kp F4  &none
         &to 0 &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &none &none &none &none &none &none                       &none &none &none  &none  &none
       >;
     };
+
     mod {
-      display-name = "Mod";
+      display-name = "mod";
       bindings = <
         &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
@@ -89,14 +90,15 @@
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
-    extra1 { 
-      display-name = "Media";    
+
+    media { 
+      display-name = "media";    
       bindings = <
-        &none &none &none &none &none &none  &tog 1                                           &mo 3 &none &none &none &none &none &none 
-        &none &none &none &none &none &none  &none                                           &none &none &none &kp C_VOL_UP &none  &kp C_PP  &none
-        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &kp C_PREV &kp C_VOL_DN &kp C_NEXT  &none  &none
-        &none &none &none &none &none &none                      &none &none                     &none &kp C_MUTE &none &none  &none  &none
-        &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+        &none &none &none &none &none &none  &none                                           &none &none &none      &none         &none       &none     &none 
+        &none &none &none &none &none &none  &none                                           &none &none &none      &kp C_VOL_UP  &none       &kp C_PP  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none            &none &none &kp C_PREV &kp C_VOL_DN  &kp C_NEXT  &none     &none
+        &none &none &none &none &none &none                      &none &none                       &none &kp C_MUTE &none         &none       &none     &none
+        &none &none &none &none &none               &none &none &none &none &none &none                  &none      &none         &none       &none     &none
       >;
     };
 
@@ -115,9 +117,9 @@
       display-name = "xcode";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
-        &none &none &none &none &kp LG(R) &kp LG(LC(T))  &none                                           &none &none &none &none  &none  &kp LG(LA(O))  &none
-        &none &none &none &none &kp LG(LA(F)) &none  &none        &none &none &none &none        &none &none &kp LC(N6) &kp LG(LS(O)) &none  &none  &none
-        &none &none &none &kp LG(LC(B)) &none &kp LG(B)                      &none &none                     &kp LC(GRAVE) &kp LG(LC(LS(ENTER))) &none &none  &none  &none
+        &none &none &none &kp LG(LC(E)) &kp LG(R) &kp LG(LC(T))  &none                                           &none &none &none &none  &none  &kp LG(LA(O))  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &kp LC(N6) &kp LG(LS(O)) &none  &none  &none
+        &none &none &none &kp LG(LC(B)) &kp LG(LA(F)) &kp LG(B)                      &none &none                     &kp LC(GRAVE) &kp LG(LC(LS(ENTER))) &none &none  &none  &none
         &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
       >;
     };
