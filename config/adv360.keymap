@@ -32,7 +32,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp LALT &hm LCTRL LEFT &hm LGUI RIGHT                &hm LSHFT ESC &kp DEL   &kp END  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm LGUI DOWN &mt RCTRL UP  &kp LBKT &kp RBKT &mo 2
+        &mo 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &hm LSHFT ESC &lt 7 TAB   &kp END  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm LRSHT DOWN &mt RGUI UP  &mt RCTRL LBKT &mt LALT RBKT &mo 2
       >;
     };
     keypad {
@@ -66,7 +66,7 @@
       >;
     };
     extra1 { 
-      display-name = "Red";    
+      display-name = "Media";    
       bindings = <
         &none &none &none &none &none &none  &tog 1                                           &mo 3 &none &none &none &none &none &none 
         &none &none &none &none &none &none  &none                                           &none &none &none &kp C_VOL_UP &none  &kp C_PP  &none
@@ -78,17 +78,35 @@
 
     extra2 { 
       display-name = "Purple";    
-      status = "reserved";
+      bindings = <
+        &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
+        &none &none &none &none &none &none  &none                                           &none &none &none &none  &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+        &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+      >;
     };
 
     extra3 { 
       display-name = "Cyan";    
-      status = "reserved";
+      bindings = <
+        &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
+        &none &none &none &none &none &none  &none                                           &none &none &none &none  &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+        &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
+      >;
     };
 
     extra4 { 
-      display-name = "Yellow";    
-      status = "reserved";
+      display-name = "nav";    
+      bindings = <
+        &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
+        &none &none &none &none &none &none  &none                                           &none &none &none &kp UP  &none  &none  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &none  &none        &none &none &none &none        &none &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &none  &none
+        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &none &none &none &none &none              &none &none &none  &none  &none
+      >;
     };
   };
 };
