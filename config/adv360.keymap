@@ -91,9 +91,9 @@
       display-name = "xcode";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
-        &none &none &none &none &kp LG(R) &kp LG(LC(T))  &none                                           &none &none &none &none  &none  &kp LG(LA(O))  &none
-        &none &none &none &none &kp LG(LA(F)) &none  &none        &none &none &none &none        &none &none &kp LC(6) &kp LG(LS(O)) &none  &none  &none
-        &none &none &none &kp LG(LC(B)) &none &kp LG(B)                      &none &none                     &kp LC(GRAVE) &kp LG(LC(LS(ENTER))) &none &none  &none  &none
+        &none &none &none &none &none &none  &none                                           &none &none &none &none  &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
         &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
       >;
     };
@@ -102,10 +102,10 @@
       display-name = "nav";    
       bindings = <
         &none &none &none &none &none &none  &none                                            &none &none &none &none &none &none &none 
-        &none &none &none &none &none &none  &none                                           &none &none &none &kp UP  &none  &none  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT &none  &none        &none &none &none &none        &none &none &kp LEFT &kp DOWN &kp RIGHT  &none  &none
-        &none &none &none &none &none &none                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &none &none &none &none &none              &none &none &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
+        &none &none &none &none &none &none  &none                                           &none &none &none &none  &none  &none  &none
+        &none &none &none &none &none &none  &none        &none &none &none &none        &none &none &none &none &none  &none  &none
+        &none &none &none &none &none &none                      &none &none                     &none &none &none &none  &none  &none
+        &none &none &none &none &none               &none &none &none &none &none &none              &none &none &none  &none  &none
       >;
     };
   };
