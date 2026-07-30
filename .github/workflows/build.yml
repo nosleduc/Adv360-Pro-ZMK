@@ -64,6 +64,7 @@ jobs:
     container:
       image: zmkfirmware/zmk-build-arm:stable
     name: Build (Clique)
+    if: ${{ false }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
