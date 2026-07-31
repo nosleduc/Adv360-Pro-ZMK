@@ -27,7 +27,13 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&to>;
       };
-    };
+
+      CopyCut: CopyCut {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LG(C)>, <&kp LG(X)>;
+      };    };
 
    
     macros {
@@ -51,9 +57,9 @@
       bindings = <
         &lt 4 EQUAL &kp N1    &kp N2   &lt 6 N3   &kp N4     &kp N5 &none                                                           &mo 3 &kp N6 &kp N7 &lt 6 N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &sk LCTRL                                                            &sk RCTRL &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &kp LG(C) &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp LGUI           &CopyCut &kp LG(V) &kp DEL  &kp BSPC           &kp RGUI &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &MoTo 2 2     &hm LALT GRAVE &kp LCTRL &hm LGUI LEFT &hm LSHFT RIGHT                &lt 5 ESC &MoTo 1 1   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RSHFT DOWN &hm RGUI UP  &hm RCTRL LBKT &hm LALT RBKT &none
+        &MoTo 2 2     &kp GRAVE &kp LALT &hm LCTRL LEFT &hm LGUI RIGHT                &lt 5 ESC &MoTo 1 1   &kp TAB  &kp PG_DN &kp ENTER &hm RSHFT SPACE              &hm RGUI DOWN &hm RCTRL UP  &hm LALT LBKT &hm LALT RBKT &none
       >;
     };
 
@@ -62,9 +68,9 @@
       bindings = <
         &none &none &none &none &none &none  &none                                                                    &none &none &none &kp LG(UP) &none &none &none 
         &none &none &none &none &none &none  &none                                                                    &none &none &none &kp UP  &none  &none  &none
-        &none &trans &kp F8 &kp F6 &kp F7 &kp F5  &none        &kp LG(C) &kp LG(V) &kp DEL &kp BSPC                      &none &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT  &kp LG(RIGHT)  &none
+        &none &none &kp F8 &kp F6 &kp F7 &kp F5  &none        &trans &trans  &trans &trans                       &none &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT  &kp LG(RIGHT)  &none
         &none &trans &trans &trans &trans &kp F9                      &none &none                     &kp LG(LC(LEFT)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LC(LG(J))  &kp LC(LG(RIGHT))  &none
-        &none &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &kp LSHFT &to 0 &none &none &kp ENTER &kp RSHFT              &kp RSHFT &kp RGUI &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
+        &none &none &trans &trans &trans               &trans &to 0 &none &none &trans &trans              &trans &trans &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none
       >;
     };
 
@@ -76,7 +82,7 @@
         &none &none &none &none &none &none  &none                                                &none &kp LS(F10) &kp F9 &kp F10 &kp F11  &kp F12  &none
         &none &none &none &none &none &none  &none        &none &none &none &none                 &none &kp F8 &kp F5 &kp F6 &kp F7  &kp F8  &none
         &none &none &none &none &none &kp PAUSE_BREAK                      &none &none                            &none &kp F1 &kp F2 &kp F3  &kp F4  &none
-        &to 0 &kp LALT &kp LCTRL &kp LGUI &kp LSHFT               &none &none &none &none &none &none                       &none &none &none  &none  &none
+        &to 0 &none &trans &trans &trans               &trans &none &none &none &trans &trans                       &none &none &none  &none  &none
       >;
     };
 
