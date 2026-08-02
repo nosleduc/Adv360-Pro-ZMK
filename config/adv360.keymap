@@ -62,10 +62,10 @@
         base {
             display-name = "base";
             bindings = <
-&lt 4 EQUAL      &kp N1    &kp N2     &lt 6 N3       &kp N4           &kp N5  &MoTo 2 2                                                         &mo 3            &kp N6  &kp N7          &lt 6 N8     &kp N9          &kp N0         &kp MINUS
+&lt 4 EQUAL      &kp N1    &kp N2     &lt 6 N3       &lt 7 N4         &kp N5  &MoTo 2 2                                                         &mo 3            &kp N6  &kp N7          &lt 6 N8     &kp N9          &kp N0         &kp MINUS
 &kp TAB          &kp Q     &kp W      &kp E          &kp R            &kp T   &sk LCTRL                                                         &sk RCTRL        &kp Y   &kp U           &kp I        &kp O           &kp P          &kp BSLH
 &kp ESC          &kp A     &kp S      &kp D          &kp F            &kp G   &kp LGUI   &CopyCut   &kp LG(V)         &kp DEL        &kp BSPC   &kp RGUI         &kp H   &kp J           &kp K        &kp L           &kp SEMI       &kp SQT
-&hm LSHFT GRAVE  &kp Z     &kp X      &kp C          &kp V            &kp B                         &kp HOME          &kp PG_UP                                  &kp N   &kp M           &kp COMMA    &kp DOT         &kp FSLH       &kp RSHFT
+&hm LSHFT GRAVE  &kp Z     &kp X      &kp C          &kp V            &kp B                         &kp LG(X)         &kp PG_UP                                  &kp N   &kp M           &kp COMMA    &kp DOT         &kp FSLH       &kp RSHFT
 &mo 7            &sk LALT  &sk LCTRL  &hm LGUI LEFT  &hm LSHFT RIGHT          &lt 5 ESC  &MoTo 1 1  &kp LEFT_GUI      &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE          &hm RSHFT DOWN  &hm RGUI UP  &hm RCTRL LBKT  &hm LALT RBKT  &none
             >;
         };
@@ -139,11 +139,11 @@
         extra4 {
             display-name = "extra4";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none                   &none                   &none          &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none                   &kp LG(LC(UP_ARROW))    &none          &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN_ARROW))  &kp LG(LC(J))  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none                   &none                   &none          &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none                   &none                   &none          &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none                   &none                   &none          &none      &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none                   &kp LG(LC(UP_ARROW))    &none          &none      &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &kp LG(LC(LEFT_ARROW))  &kp LC(LG(DOWN_ARROW))  &kp LG(LC(J))  &kp RIGHT  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none                   &none                   &none          &none      &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none                   &none                   &none          &none      &none
             >;
         };
     };
