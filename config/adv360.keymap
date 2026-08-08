@@ -63,12 +63,16 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <55 56>;
             timeout-ms = <10>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <54 55>;
             timeout-ms = <10>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
