@@ -61,7 +61,7 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <55 56>;
+            key-positions = <9 10>;
             timeout-ms = <10>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -69,7 +69,7 @@
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <54 55>;
+            key-positions = <8 9>;
             timeout-ms = <10>;
             slow-release;
             require-prior-idle-ms = <100>;
