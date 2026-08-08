@@ -60,7 +60,7 @@
         compatible = "zmk,combos";
 
         Backspace {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <55 56>;
             timeout-ms = <15>;
         };
