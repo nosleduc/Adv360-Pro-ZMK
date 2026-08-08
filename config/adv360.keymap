@@ -62,12 +62,13 @@
         Backspace {
             bindings = <&kp DELETE>;
             key-positions = <55 56>;
-            timeout-ms = <25>;
+            timeout-ms = <15>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <54 55>;
+            timeout-ms = <15>;
         };
     };
 
