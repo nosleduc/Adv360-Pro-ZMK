@@ -59,10 +59,15 @@
     combos {
         compatible = "zmk,combos";
 
-        Delete {
+        Backspace {
             bindings = <&kp DELETE>;
             key-positions = <55 56>;
             timeout-ms = <25>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <54 55>;
         };
     };
 
