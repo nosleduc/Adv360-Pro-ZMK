@@ -56,6 +56,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <55 56>;
+            timeout-ms = <25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
