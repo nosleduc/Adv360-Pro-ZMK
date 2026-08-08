@@ -93,11 +93,11 @@
         nav {
             display-name = "nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans            &trans            &trans          &trans            &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans            &trans            &kp UP_ARROW    &trans            &trans             &trans
-&trans  &trans  &kp F8  &kp F6  &kp F7  &kp F5  &none          &trans  &trans      &trans  &trans  &none   &trans            &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &kp F9                         &none       &none                   &kp LG(LC(LEFT))  &kp LC(LG(DOWN))  &kp LC(LG(UP))  &kp LC(LG(J))     &kp LC(LG(RIGHT))  &trans
-&trans  &trans  &trans  &trans  &trans          &mt LSHFT ESC  &to 0   &none       &none   &trans  &trans                    &trans            &trans          &kp LG(LS(LBKT))  &kp LG(LS(RBKT))   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans              &trans            &trans          &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans              &trans            &kp UP_ARROW    &trans            &trans               &trans
+&trans  &trans  &kp F8  &kp F6  &kp F7  &kp F5  &none          &trans  &trans      &trans  &trans  &none   &kp LG(LEFT_ARROW)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT         &kp LG(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &kp F9                         &none       &none                   &kp LG(LC(LEFT))    &kp LC(LG(DOWN))  &kp LC(LG(UP))  &kp LC(LG(J))     &kp LC(LG(RIGHT))    &trans
+&trans  &trans  &trans  &trans  &trans          &mt LSHFT ESC  &to 0   &none       &none   &trans  &trans                      &trans            &trans          &kp LG(LS(LBKT))  &kp LG(LS(RBKT))     &trans
             >;
         };
 
