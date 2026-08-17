@@ -78,22 +78,22 @@
         base {
             display-name = "base";
             bindings = <
-&lt 4 EQUAL  &kp N1     &kp N2    &lt 6 N3               &lt 7 N4        &kp N5  &MoTo 2 2                                                       &mo 3            &kp N6  &kp N7               &lt 6 N8            &kp N9                 &kp N0             &kp MINUS
-&kp TAB      &kp Q      &kp W     &kp E                  &kp R           &kp T   &kp LG(LS(K))                                                   &none            &kp Y   &kp U                &kp I               &kp O                  &kp P              &kp BSLH
-&kp ESC      &kp A      &kp S     &kp D                  &kp F           &kp G   &kp LGUI       &CopyCut   &kp LG(V)       &kp DEL    &kp BSPC   &none            &kp H   &kp J                &kp K               &kp L                  &kp SEMI           &kp SQT
-&sk LSHFT    &kp Z      &kp X     &kp C                  &kp V           &kp B                             &kp LG(X)       &kp PG_UP                              &kp N   &kp M                &kp COMMA           &kp DOT                &kp SLASH          &kp RIGHT_SHIFT
-&none        &kp GRAVE  &kp LALT  &hm LEFT_CONTROL LEFT  &hm LGUI RIGHT          &lt 5 ESC      &MoTo 1 1  &lt 7 LGUI      &kp RGUI   &kp ENTER  &hm RSHFT SPACE          &hm RGUI DOWN_ARROW  &hm RCTRL UP_ARROW  &hm LALT LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&lt 4 EQUAL  &kp N1          &kp N2     &lt 6 N3       &lt 7 N4         &kp N5  &MoTo 2 2                                                       &mo 3            &kp N6  &kp N7                &lt 6 N8           &kp N9                  &kp N0                  &kp MINUS
+&kp TAB      &kp Q           &kp W      &kp E          &kp R            &kp T   &kp LG(LS(K))                                                   &none            &kp Y   &kp U                 &kp I              &kp O                   &kp P                   &kp BSLH
+&kp ESC      &kp A           &kp S      &kp D          &kp F            &kp G   &kp LGUI       &CopyCut   &kp LG(V)       &kp DEL    &kp BSPC   &none            &kp H   &kp J                 &kp K              &kp L                   &kp SEMI                &kp SQT
+&sk LSHFT    &kp Z           &kp X      &kp C          &kp V            &kp B                             &kp LG(X)       &kp PG_UP                              &kp N   &kp M                 &kp COMMA          &kp DOT                 &kp SLASH               &kp RIGHT_SHIFT
+&none        &mt LALT GRAVE  &kp LCTRL  &hm LGUI LEFT  &hm LSHFT RIGHT          &lt 5 ESC      &MoTo 1 1  &lt 7 LGUI      &kp RGUI   &kp ENTER  &hm RSHFT SPACE          &hm RSHFT DOWN_ARROW  &hm RGUI UP_ARROW  &hm RCTRL LEFT_BRACKET  &mt LALT RIGHT_BRACKET  &none
             >;
         };
 
         nav {
             display-name = "nav";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                                     &none   &trans              &trans            &trans          &trans                    &trans                     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                                     &none   &trans              &trans            &kp UP_ARROW    &trans                    &trans                     &trans
-&trans  &trans  &kp F8  &kp F6  &kp F7  &kp F5  &none          &trans  &trans      &trans         &trans  &none   &kp LG(LEFT_ARROW)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT                 &kp LG(RIGHT_ARROW)        &trans
-&trans  &trans  &trans  &trans  &trans  &kp F9                         &none       &none                          &kp LG(LC(LEFT))    &kp LC(LG(DOWN))  &kp LC(LG(UP))  &kp LC(LG(J))             &kp LC(LG(RIGHT))          &trans
-&trans  &trans  &trans  &trans  &trans          &mt LSHFT ESC  &to 0   &mo 7       &kp LG(LS(K))  &trans  &trans                      &trans            &trans          &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
+&none   &none   &none   &none   &none   &none  &none                                                     &none   &none               &none             &none           &none                     &none                      &none
+&trans  &none   &none   &none   &none   &none  &none                                                     &none   &none               &none             &kp UP_ARROW    &none                     &none                      &none
+&trans  &trans  &none   &none   &none   &none  &none          &trans  &trans      &trans         &trans  &none   &kp LG(LEFT_ARROW)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT                 &kp LG(RIGHT_ARROW)        &none
+&trans  &trans  &trans  &trans  &trans  &none                         &none       &none                          &kp LG(LC(LEFT))    &kp LC(LG(DOWN))  &kp LC(LG(UP))  &kp LC(LG(J))             &kp LC(LG(RIGHT))          &none
+&trans  &trans  &trans  &trans  &trans         &mt LSHFT ESC  &to 0   &mo 7       &kp LG(LS(K))  &trans  &trans                      &trans            &trans          &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans
             >;
         };
 
