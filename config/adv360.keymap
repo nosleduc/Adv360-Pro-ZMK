@@ -87,11 +87,11 @@
         base {
             display-name = "base";
             bindings = <
-&lt 4 EQUAL      &kp N1    &kp N2     &lt 6 N3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                     &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9                &kp N0               &kp MINUS
-&kp TAB          &kp Q     &kp W      &kp E     &kp R         &kp T   &none                                                         &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O                 &kp P                &kp BSLH
-&lt 6 ESCAPE     &kp A     &kp S      &kp D     &kp F         &kp G   &none         &CopyCut    &kp LG(V)       &kp DEL  &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L                 &kp SEMI             &kp SQT
-&mt LSHFT GRAVE  &kp Z     &kp X      &kp C     &kp V         &kp B                             &kp LG(X)       &none                                  &kp N   &kp M            &kp COMMA  &kp DOT               &kp UP_ARROW         &kp RSHFT
-&none            &sk LALT  &sk LCTRL  &kp LGUI  &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &MoTog 2 2      &mo 2    &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &mt RCTRL LEFT_ARROW  &mt LALT DOWN_ARROW  &kp RIGHT_ARROW
+&lt 4 EQUAL      &kp N1    &kp N2     &lt 6 N3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                     &mo 3            &kp N6  &kp N7           &lt 6 N8   &kp N9                  &kp N0                  &kp MINUS
+&kp TAB          &kp Q     &kp W      &kp E     &kp R         &kp T   &none                                                         &none            &kp Y   &kp U            &kp I      &kp O                   &kp P                   &kp BSLH
+&lt 6 ESCAPE     &kp A     &kp S      &kp D     &kp F         &kp G   &none         &CopyCut    &kp LG(V)       &kp DEL  &kp BSPC   &none            &kp H   &kp J            &kp K      &kp L                   &kp SEMI                &kp SQT
+&mt LSHFT GRAVE  &kp Z     &kp X      &kp C     &kp V         &kp B                             &kp LG(X)       &none                                &kp N   &kp M            &kp COMMA  &kp DOT                 &kp SLASH               &kp RSHFT
+&none            &sk LALT  &sk LCTRL  &kp LGUI  &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &MoTog 2 2      &mo 2    &kp ENTER  &hm RSHFT SPACE          &sk RIGHT_SHIFT  &kp RGUI   &mt RCTRL LEFT_BRACKET  &mt LALT RIGHT_BRACKET  &none
             >;
         };
 
@@ -142,11 +142,11 @@
         symbols {
             display-name = "symbols";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                     &none            &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LS(N0)          &kp LS(MINUS)
-&none  &none  &none  &none  &none  &none  &none                                     &kp RIGHT_BRACE  &kp LS(Y)   &kp LS(LBKT)  &kp LS(RBKT)   &kp LS(O)     &kp LS(P)           &kp LS(BSLH)
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none     &kp LEFT_BRACE   &kp LS(H)   &LeftBracket  &RightBracket  &kp LS(L)     &kp LS(SEMI)        &kp DOUBLE_QUOTES
-&none  &none  &none  &none  &none  &none                &none      &none                             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)   &kp LS(UP_ARROW)    &kp QUESTION
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &MyEnter  &none                        &none         &none          &kp LS(LEFT)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)
+&none  &none  &none  &none  &none  &none  &none                                     &none  &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)      &kp LS(N0)        &kp LS(MINUS)
+&none  &none  &none  &none  &none  &none  &none                                     &none  &kp LS(Y)   &kp LS(LBKT)  &kp LS(RBKT)   &kp LS(O)       &kp LS(P)         &kp LS(BSLH)
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none     &none  &kp LS(H)   &LeftBracket  &RightBracket  &kp LS(L)       &kp LS(SEMI)      &kp DOUBLE_QUOTES
+&none  &none  &none  &none  &none  &none                &none      &none                   &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)     &kp LS(QUESTION)  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &MyEnter  &none              &none         &none          &kp LEFT_BRACE  &kp RIGHT_BRACE   &none
             >;
         };
 
