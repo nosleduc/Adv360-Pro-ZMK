@@ -87,22 +87,22 @@
         base {
             display-name = "base";
             bindings = <
-&lt 6 EQUAL      &lt 4 NUMBER_1  &kp N2     &kp NUMBER_3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                          &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9    &kp N0        &kp MINUS
-&kp TAB          &kp Q           &kp W      &kp E         &kp R         &kp T   &none                                                              &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O     &kp P         &kp BSLH
-&lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L     &kp SEMI      &kp SQT
-&mt LSHFT GRAVE  &kp Z           &kp X      &kp C         &kp V         &kp B                             &kp LG(X)      &none                                        &kp N   &kp M            &kp COMMA  &kp DOT   &kp UP_ARROW  &kp SLASH
-&mo 2            &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &kp LEFT  &kp DOWN      &kp RIGHT
+&lt 6 EQUAL      &lt 4 NUMBER_1  &kp N2     &kp NUMBER_3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                          &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9     &kp N0     &kp MINUS
+&kp TAB          &kp Q           &kp W      &kp E         &kp R         &kp T   &none                                                              &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O      &kp P      &kp BSLH
+&lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L      &kp SEMI   &kp SQT
+&mt LSHFT GRAVE  &kp Z           &kp X      &kp C         &kp V         &kp B                             &kp LG(X)      &none                                        &kp N   &kp M            &kp COMMA  &kp DOT    &kp SLASH  &kp RIGHT_SHIFT
+&mo 2            &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &sk RCTRL  &kp LALT   &mo 2
             >;
         };
 
         nav {
             display-name = "nav";
             bindings = <
-&none   &none   &none   &mo 6   &none   &kp F5  &none                                       &none   &none         &none         &none             &none          &none         &none
-&trans  &none   &none   &none   &none   &none   &none                                       &none   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none         &none
-&trans  &trans  &none   &none   &none   &none   &none   &trans  &trans      &trans  &trans  &none   &kp LEFT      &kp DOWN      &kp UP_ARROW      &kp RIGHT      &none         &none
-&trans  &trans  &trans  &trans  &trans  &none                   &none       &none                   &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &kp UP_ARROW  &none
-&trans  &trans  &trans  &trans  &trans          &tog 1  &tog 1  &to 0       &none   &trans  &trans                &trans        &trans            &kp LEFT       &kp DOWN      &kp RIGHT
+&none   &none   &none   &mo 6   &none   &kp F5  &none                                       &none   &none         &none         &none             &none          &none  &none
+&trans  &none   &none   &none   &none   &none   &none                                       &none   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none  &none
+&trans  &trans  &none   &none   &none   &none   &none   &trans  &trans      &trans  &trans  &none   &kp LEFT      &kp DOWN      &kp UP_ARROW      &kp RIGHT      &none  &none
+&trans  &trans  &trans  &trans  &trans  &none                   &none       &none                   &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none  &none
+&trans  &trans  &trans  &trans  &trans          &tog 1  &tog 1  &to 0       &none   &trans  &trans                &trans        &trans            &none          &none  &none
             >;
         };
 
@@ -142,11 +142,11 @@
         symbols {
             display-name = "symbols";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                     &none            &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)    &kp LS(N0)        &kp LS(MINUS)
-&none  &none  &none  &none  &none  &none  &none                                     &kp RIGHT_BRACE  &kp LS(Y)   &kp LS(LBKT)  &kp LS(RBKT)   &kp LS(O)     &kp LS(P)         &kp LS(BSLH)
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none     &kp LEFT_BRACE   &kp LS(H)   &LeftBracket  &RightBracket  &kp LS(L)     &kp LS(SEMI)      &kp DOUBLE_QUOTES
-&none  &none  &none  &none  &none  &none                &none      &none                             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)   &kp LS(UP_ARROW)  &kp QUESTION
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &MyEnter  &none                        &none         &none          &kp LS(LEFT)  &kp LS(DOWN)      &kp LS(RIGHT)
+&none  &none  &none  &none  &none  &none  &none                                     &none            &kp LS(N6)  &kp LS(N7)    &kp LS(N8)     &kp LS(N9)   &kp LS(N0)        &kp LS(MINUS)
+&none  &none  &none  &none  &none  &none  &none                                     &kp RIGHT_BRACE  &kp LS(Y)   &kp LS(LBKT)  &kp LS(RBKT)   &kp LS(O)    &kp LS(P)         &kp LS(BSLH)
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none     &kp LEFT_BRACE   &kp LS(H)   &LeftBracket  &RightBracket  &kp LS(L)    &kp LS(SEMI)      &kp DOUBLE_QUOTES
+&none  &none  &none  &none  &none  &none                &none      &none                             &kp LS(N)   &kp LS(M)     &kp LS(COMMA)  &kp LS(DOT)  &kp LS(QUESTION)  &kp RSHFT
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &MyEnter  &none                        &none         &none          &none        &none             &none
             >;
         };
 
