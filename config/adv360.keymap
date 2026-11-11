@@ -91,7 +91,7 @@
 &kp TAB          &kp Q           &kp W      &kp E         &kp R         &kp T   &none                                                              &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O      &kp P      &kp BSLH
 &lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L      &kp SEMI   &lt 6 SQT
 &mt LSHFT GRAVE  &kp Z           &kp X      &kp C         &kp V         &kp B                             &kp LG(X)      &none                                        &kp N   &kp M            &kp COMMA  &kp DOT    &kp SLASH  &kp RIGHT_SHIFT
-&mo 2            &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &sk RCTRL  &sk LALT   &mo 2
+&MoTog 2 2       &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &sk RCTRL  &sk LALT   &mo 2
             >;
         };
 
@@ -109,11 +109,11 @@
         fn {
             display-name = "fn";
             bindings = <
-&none  &kp F1    &kp F2     &kp F3    &kp F4          &kp F5           &none                                          &none   &kp F6  &kp F7     &kp F8    &kp F9     &kp F10          &kp F11
-&none  &none     &none      &none     &none           &none            &none                                          &none   &none   &none      &none     &none      &kp PRINTSCREEN  &kp F12
-&none  &none     &none      &none     &none           &none            &none   &none       &none       &none  &none   &none   &none   &none      &none     &none      &none            &none
-&none  &none     &none      &none     &none           &kp PAUSE_BREAK                      &none       &none                  &none   &none      &none     &none      &none            &none
-&none  &kp LALT  &kp LCTRL  &kp LGUI  &kp LEFT_SHIFT                   &trans  &MoTog 1 1  &tog 2      &none  &trans  &trans          &kp RSHFT  &kp RGUI  &kp RCTRL  &kp LALT         &none
+&none   &kp F1    &kp F2     &kp F3    &kp F4          &kp F5           &none                                          &none   &kp F6  &kp F7     &kp F8    &kp F9     &kp F10          &kp F11
+&none   &none     &none      &none     &none           &none            &none                                          &none   &none   &none      &none     &none      &kp PRINTSCREEN  &kp F12
+&none   &none     &none      &none     &none           &none            &none   &none       &none       &none  &none   &none   &kp F8  &kp F6     &kp F7    &none      &none            &none
+&none   &none     &none      &none     &none           &kp PAUSE_BREAK                      &none       &none                  &none   &none      &none     &none      &none            &none
+&tog 2  &kp LALT  &kp LCTRL  &kp LGUI  &kp LEFT_SHIFT                   &trans  &MoTog 1 1  &tog 2      &none  &trans  &trans          &kp RSHFT  &kp RGUI  &kp RCTRL  &kp LALT         &none
             >;
         };
 
