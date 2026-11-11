@@ -89,9 +89,9 @@
             bindings = <
 &lt 6 EQUAL      &lt 4 NUMBER_1  &kp N2     &kp NUMBER_3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                          &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9     &kp N0     &kp MINUS
 &kp TAB          &kp Q           &kp W      &kp E         &kp R         &kp T   &none                                                              &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O      &kp P      &kp BSLH
-&lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L      &kp SEMI   &kp SQT
+&lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L      &kp SEMI   &lt 6 SQT
 &mt LSHFT GRAVE  &kp Z           &kp X      &kp C         &kp V         &kp B                             &kp LG(X)      &none                                        &kp N   &kp M            &kp COMMA  &kp DOT    &kp SLASH  &kp RIGHT_SHIFT
-&mo 2            &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &sk RCTRL  &kp LALT   &mo 2
+&mo 2            &sk LALT        &sk LCTRL  &kp LGUI      &sk LSHFT             &lt 5 ESCAPE  &MoTog 1 1  &kp LGUI       &kp RIGHT_GUI  &kp ENTER  &hm RSHFT SPACE            &sk RIGHT_SHIFT  &kp RGUI   &sk RCTRL  &sk LALT   &mo 2
             >;
         };
 
@@ -153,7 +153,7 @@
         xcode {
             display-name = "xcode";
             bindings = <
-&none  &none  &none  &none          &none          &none          &none                                  &none  &none                   &none                  &none                 &none                &kp LC(KP_NUMBER_0)  &none
+&none  &none  &none  &none          &none          &none          &none                                  &none  &kp LC(NUMBER_6)        &none                  &none                 &none                &kp LC(KP_NUMBER_0)  &none
 &none  &none  &none  &kp LG(LC(E))  &kp LG(R)      &kp LG(LC(T))  &none                                  &none  &none                   &kp LC(NUMBER_6)       &none                 &kp LG(LS(O))        &kp LG(LA(O))        &none
 &none  &none  &none  &none          &none          &none          &none  &none  &none      &none  &none  &none  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(DOWN))       &kp LG(LC(UP_ARROW))  &kp LG(LC(J))        &kp LG(LC(RIGHT))    &none
 &none  &none  &none  &kp LG(LC(B))  &kp LG(LA(F))  &kp LG(B)                    &none      &none                &kp LC(GRAVE)           &kp LG(LC(LS(ENTER)))  &kp LG(LEFT_BRACE)    &kp LG(RIGHT_BRACE)  &none                &none
