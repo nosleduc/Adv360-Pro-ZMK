@@ -87,7 +87,7 @@
         base {
             display-name = "base";
             bindings = <
-&lt 6 EQUAL      &lt 4 NUMBER_1  &kp N2     &kp NUMBER_3  &kp NUMBER_4  &kp N5  &MoTo 2 2                                                          &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9     &kp N0     &kp MINUS
+&lt 6 EQUAL      &lt 4 NUMBER_1  &kp N2     &kp NUMBER_3  &kp NUMBER_4  &kp N5  &MoTog 2 2                                                         &mo 3              &kp N6  &kp N7           &lt 6 N8   &kp N9     &kp N0     &kp MINUS
 &kp TAB          &kp Q           &kp W      &kp E         &kp R         &kp T   &none                                                              &kp RIGHT_BRACKET  &kp Y   &kp U            &kp I      &kp O      &kp P      &kp BSLH
 &lt 6 ESCAPE     &kp A           &kp S      &kp D         &kp F         &kp G   &none         &CopyCut    &kp LG(V)      &kp DEL        &kp BSPC   &kp LEFT_BRACKET   &kp H   &kp J            &kp K      &kp L      &kp SEMI   &lt 6 SQT
 &mt LSHFT GRAVE  &kp Z           &kp X      &kp C         &kp V         &kp B                             &kp LG(X)      &none                                        &kp N   &kp M            &kp COMMA  &kp DOT    &kp SLASH  &kp RIGHT_SHIFT
@@ -98,7 +98,7 @@
         nav {
             display-name = "nav";
             bindings = <
-&none   &none   &none   &mo 6   &none   &kp F5  &none                                       &none   &none         &none         &none             &none          &none  &none
+&none   &none   &none   &mo 6   &none   &kp F5  &none                                       &none   &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none  &none
 &trans  &none   &none   &none   &none   &none   &none                                       &none   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &none  &none
 &trans  &trans  &none   &none   &none   &none   &none   &trans  &trans      &trans  &trans  &none   &kp LEFT      &kp DOWN      &kp UP_ARROW      &kp RIGHT      &none  &none
 &trans  &trans  &trans  &trans  &trans  &none                   &none       &none                   &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &none  &none
@@ -109,7 +109,7 @@
         fn {
             display-name = "fn";
             bindings = <
-&none   &kp F1    &kp F2     &kp F3    &kp F4          &kp F5           &none                                          &none   &kp F6  &kp F7     &kp F8    &kp F9     &kp F10          &kp F11
+&none   &kp F1    &kp F2     &kp F3    &kp F4          &kp F5           &tog 2                                         &none   &kp F6  &kp F7     &kp F8    &kp F9     &kp F10          &kp F11
 &none   &none     &none      &none     &none           &none            &none                                          &none   &none   &none      &none     &none      &kp PRINTSCREEN  &kp F12
 &none   &none     &none      &none     &none           &none            &none   &none       &none       &none  &none   &none   &kp F8  &kp F6     &kp F7    &none      &none            &none
 &none   &none     &none      &none     &none           &kp PAUSE_BREAK                      &none       &none                  &none   &none      &none     &none      &none            &none
